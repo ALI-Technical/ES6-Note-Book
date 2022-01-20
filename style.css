@@ -1,0 +1,93 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #380269;
+    background-image: linear-gradient(40deg, #380269 1%, #4d4dc1 50%, #2e2dbb 99%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#heading{
+    text-align: center;
+    letter-spacing: 3px;
+}
+.input-box{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    /* align-items: center; */
+}
+.input-box label span{
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+.input-box input{
+    /* border: 1px solid red; */
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    padding: 0 5px;
+    /* background-color: ; */
+}
+.input-box input:focus{
+    background-color: skyblue;
+    color: black;
+}
+.line{
+    border: 2px solid navy
+}
+.btns-div button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: navy;
+    color: #fff;
+    transition: 1s;
+}
+.btns-div button:hover{
+    background-color: black !important;
+    transform: translateY(10%) !important;
+}
+.user-div{
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+.user-div i{
+    margin-top: 10px;
+    font-size: 24px;
+}
+.notes-box section{
+    background-color: #0332a1;
+    border-radius: 20px;
+    border: 4px solid #fff;
+    padding: 2em;
+    overflow: hidden;
+    color: #fff;
+    margin: 10px 2em;
+}
+.box-line{
+    border-bottom: 2px solid black;
+}
+.marquee h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: cursive;
+}
+/* Media Queries For Screen */
+
+@media only screen and (max-width:991px){
+    .notes-box section{
+        margin: 5px 10px;
+    }
+}
